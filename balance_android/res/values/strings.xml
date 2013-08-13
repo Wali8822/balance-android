@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Balance_androidActivity!</string>
+    <string name="app_name">Balance_android</string>
+    <string name="level1">Erect your phone , rotate the phone to keep the balance.\r\nIf the ball fall or the board touch the fire ,then you lose.</string>
+</resources>

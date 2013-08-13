@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE themes PUBLIC "-//www.matthiasmann.de//TWL-Theme//EN" "http://hg.l33tlabs.org/twl/raw-file/tip/src/de/matthiasmann/twl/theme/theme.dtd">
+<themes>
+    <fontDef name="normal" filename="font.fnt" color="white" default="true">
+        <fontParam if="error" color="red"/>
+        <fontParam if="warning" color="orange"/>
+        <fontParam if="disabled" color="gray"/>
+        <fontParam if="textSelection" color="blue"/>
+    </fontDef>
+
+    <inputMapDef name="-defaultInputMap">
+        <action name="selectAll">ctrl A</action>
+        <action name="selectAll">cmd A</action>
+        <action name="cut">ctrl X</action>
+        <action name="cut">cmd X</action>
+        <action name="copy">ctrl C</action>
+        <action name="copy">cmd C</action>
+        <action name="paste">ctrl V</action>
+        <action name="paste">cmd V</action>
+    </inputMapDef>
+
+    <theme name="-defaults">
+        <param name="background"><image>none</image></param>
+        <param name="overlay"><image>none</image></param>
+        <param name="font"><font>normal</font></param>
+        <param name="textAlignment"><enum type="alignment">left</enum></param>
+        <param name="minWidth"><int>0</int></param>
+        <param name="minHeight"><int>0</int></param>
+        <param name="maxWidth"><int>0</int></param>
+        <param name="maxHeight"><int>0</int></param>
+        <param name="inputMap"><inputMap>-defaultInputMap</inputMap></param>
+    </theme>
+
+    <theme name="label" ref="-defaults" allowWildcard="true">
+    </theme>
+    <images file="rubber_normal.png">
+        <area name="rubber_normal_area" xywh="*"/>
+        <alias name="rubber_normal_alias" ref="rubber_normal_area" if="!selected"/>
+    </images>
+    <images file="rubber_select.png">
+        <area name="rubber_select_area" xywh="*"/>
+        <alias name="rubber_select_alias" ref="rubber_select_area" if="selected"/>
+    </images>
+    <images file="pingpang_normal.png">
+        <area name="pingpang_normal_area" xywh="*"/>
+        <alias name="pingpang_normal_alias" ref="pingpang_normal_area" if="!selected"/>
+    </images>
+    <images file="pingpang_select.png">
+        <area name="pingpang_select_area" xywh="*"/>
+        <alias name="pingpang_select_alias" ref="pingpang_select_area" if="selected"/>
+    </images>
+    <images file="metal_select.png">
+        <area name="metal_select_area" xywh="*"/>
+        <alias name="metal_select_alias" ref="metal_select_area" if="selected"/>
+    </images>
+    <images file="metal_normal.png">
+        <area name="metal_normal_area" xywh="*"/>
+        <alias name="metal_normal_alias" ref="metal_normal_area" if="!selected"/>
+    </images>
+    <images file="audio_volume_medium.png">
+        <area name="audio_button_area" xywh="*"/>
+        <alias name="audio_button_alias" ref="audio_button_area"/>
+    </images>
+    <images file="menu_background.png">
+        <area name="menu_background_area" xywh="*"/>
+        <alias name="menu_background_alias" ref="menu_background_area"/>
+    </images>
+    <images file="stop.png">
+        <area name="button_no_area" xywh="*"/>
+        <alias name="button_no_alias" ref="button_no_area" if="!selected"/>
+    </images>
+    <images file="music.png">
+        <area name="button_music_background_area" xywh="*"/>
+        <alias name="button_music_background_alias" ref="button_music_background_area"/>
+        <area name="transparent" xywh="0,0,25,25"/>
+    </images>
+    <images file="button_background_two.png">
+        <area name="button_background_normal_area" xywh="0,0,512,256"/>
+        <area name="button_background_select_area" xywh="512,0,512,256"/>
+        <select name="button_background">
+            <alias ref="button_background_select_area" if="pressed"/>
+            <alias ref="button_background_normal_area"/>
+        </select>
+    </images>
+    <theme name="button" ref="-defaults">
+        <param name="background"><image>button_background</image></param>
+        <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+    </theme>
+    <theme name="music_button" ref="-defaults">
+        <param name="background"><image>button_music_background_area</image></param>
+        <param name="overlay"><image>button_no_alias</image></param>
+    </theme>
+    <theme name="menu_background" ref="-defaults">
+        <param name="background"><image>menu_background_alias</image></param>
+    </theme>
+    <theme name="audio_button" ref="-defaults">
+        <param name="background"><image>audio_button_alias</image></param>
+        <param name="overlay"><image>button_no_alias</image></param>
+    </theme>
+    <theme name="pingpang_ball" ref="-defaults">
+        <param name="background"><image>pingpang_normal_alias</image></param>
+        <param name="overlay"><image>pingpang_select_alias</image></param>
+    </theme>
+    <theme name="rubber_ball" ref="-defaults">
+        <param name="background"><image>rubber_normal_alias</image></param>
+        <param name="overlay"><image>rubber_select_alias</image></param>
+    </theme>
+    <theme name="metal_ball" ref="-defaults">
+        <param name="background"><image>metal_normal_alias</image></param>
+        <param name="overlay"><image>metal_select_alias</image></param>
+    </theme>
+    <theme name="transparent_page" ref="-defaults">
+        <param name="background"><image>transparent</image></param>
+    </theme>
+</themes>

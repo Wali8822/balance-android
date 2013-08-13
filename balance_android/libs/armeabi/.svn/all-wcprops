@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1579/trunk/extensions/twl/gdx-twl-tests-android/libs/armeabi
+END
+libgdx.so
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1579/trunk/extensions/twl/gdx-twl-tests-android/libs/armeabi/libgdx.so
+END
+libandroidgl20.so
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/625/trunk/extensions/twl/gdx-twl-tests-android/libs/armeabi/libandroidgl20.so
+END
